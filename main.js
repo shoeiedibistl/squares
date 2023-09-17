@@ -24,7 +24,7 @@ function addSquares (num) {
 
 
 for (let i = 0; i < num; i++) {
-    let Coordinates = getCoordinates(window.innerWidth - 40 * 2, window.innerHeight - 40 * 2);
+    let Coordinates = getCoordinates(window.innerWidth - 40 * 1.25, window.innerHeight - 40 * 1.25);
     let newSquare = document.createElement("div");
     document.body.insertAdjacentElement("afterend", newSquare)
     console.log(Coordinates);
