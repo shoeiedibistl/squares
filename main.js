@@ -27,7 +27,6 @@ for (let i = 0; i < num; i++) {
     let Coordinates = getCoordinates(window.innerWidth - 40, window.innerHeight - 40);
     let newSquare = document.createElement("div");
     document.body.insertAdjacentElement("afterend", newSquare)
-    console.log(Coordinates);
     newSquare.classList.add ("mySquare")
     newSquare.style.backgroundColor = getColor();
     newSquare.style.transform = `translate(${Coordinates[0]}px, ${Coordinates[1]}px)`
