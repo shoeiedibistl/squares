@@ -1,29 +1,27 @@
-function getNumberOfSquares (min, max) {
+function getRandomNumber (min, max) {
     let res = min + Math.random() * (max + 1 - min);
     return Math.floor(res);
 }
 
 function getColor () {
-    let r = Math.floor(Math.random() * (255 + 1));
-    let g = Math.floor(Math.random() * (255 + 1));
-    let b = Math.floor(Math.random() * (255 + 1));
+    let r = getRandomNumber(0, 255);
+    let g = getRandomNumber(0, 255);
+    let b = getRandomNumber(0, 255);
 
     return `rgb(${r}, ${g}, ${b})`
 }
 
 function getCoordinates(myWidth, myHeight) {
-    let x = Math.floor(Math.random() * (myWidth + 1));
-    let y = Math.floor(Math.random() * (myHeight + 1));
+    let x = getRandomNumber(0, myWidth);
+    let y = getRandomNumber(0, myHeight);
 
     return [x, y]
 }
 
-const num = getNumberOfSquares(10, 100);
+const num = getRandomNumber(10, 100);
 
 function addSquares (num) {
-
     const parent = document.querySelector(".div")
-
     let coordinates
 
     for (let i = 0; i < num; i++) {
