@@ -22,14 +22,17 @@ const num = getNumberOfSquares(10, 100);
 
 function addSquares (num) {
 
+const parent = document.querySelector(".div")
+
+let coordinates
 
 for (let i = 0; i < num; i++) {
-    let Coordinates = getCoordinates(window.innerWidth - 40, window.innerHeight - 40);
     let newSquare = document.createElement("div");
-    document.body.insertAdjacentElement("afterend", newSquare)
+    coordinates = getCoordinates(window.innerWidth - 40, window.innerHeight - 40);
+    parent.append(newSquare)
     newSquare.classList.add ("mySquare")
     newSquare.style.backgroundColor = getColor();
-    newSquare.style.transform = `translate(${Coordinates[0]}px, ${Coordinates[1]}px)`
+    newSquare.style.transform = `translate(${coordinates[0]}px, ${coordinates[1]}px)`
 }
 }
 
