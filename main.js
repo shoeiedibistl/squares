@@ -20,9 +20,6 @@ function getCoordinates(myWidth, myHeight) {
     return [x, y]
 }
 
-function getOpacity () {
-}
-
 const num = getRandomNumber(10, 100);
 
 function addSquares (num) {
