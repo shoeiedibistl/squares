@@ -8,7 +8,7 @@ function getColor () {
     let g = getRandomNumber(0, 255);
     let b = getRandomNumber(0, 255);
     
-    let opacity = getRandomNumber(1, 10) / 10;
+    let opacity = getRandomNumber(1, 100) / 100;
 
     return [`rgb(${r}, ${g}, ${b})`, opacity]
 }
